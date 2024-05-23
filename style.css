@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 5rem;
+    background: rgb(79, 77, 77);
+    display: flex;
+    padding: 1rem 1rem 1rem 8rem;
+    gap: 3rem;
+}
+
+nav > div{
+    background: rgb(62, 62, 62);
+    display: flex;
+}
+
+.priority{
+    padding: 12px;
+    gap: 12px;
+}
+
+.priority > div{
+    height: auto;
+    width: 5rem;
+    cursor: pointer;
+}
+
+.priority > div:hover{
+    background: #485460;
+}
+
+.red{background: red}
+
+.green{background: green}
+
+.blue{background: rgb(15, 27, 136)}
+
+.black{background: black}
+
+.action{
+    width: auto;
+    color: #ffffff;
+    font-size: 30px;
+    justify-content: space-between;
+    /* gap: 3rem; */
+    align-items: center;
+}
+
+.action> div{
+    cursor: pointer;
+    height: 100%;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add:hover{
+    background-color: #4bb543;
+}
+
+.remove:hover{
+    background-color: red;
+}
+
+.main{
+    height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+    gap: 3rem;
+}
+
+.ticket{
+    height: 12rem;
+    width: 15rem;
+    background: coral;
+}
+
+.ticket-color{
+    height: 1rem;
+}
+
+.ticket-id{
+    height: 2rem;
+    background: yellow;
+}
+
+.modal{
+    background: lightsalmon;
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    display: none;
+}
+
+textarea{
+    height: 100%;
+    width: 80%;
+    text-decoration: none;
+    outline:none;
+    resize: none;
+    background: #dfe4ea;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.priority-create{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    justify-content: space-between;
+}
+
+.priority-create> div{
+    height: 3rem;
+    width: auto;
+    cursor: pointer;
+    
+}
+
+.priority-create > div:hover{
+    background: #485460;
+}
+
+.active{
+    border: 3px solid blue;
+}
